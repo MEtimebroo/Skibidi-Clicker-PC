@@ -36,14 +36,14 @@ buttons.forEach(button => {
 })
 
 function inc() {
-  spnElement.innerText = score++;
+  spnElement.innerText = score += 1;
 }
 
 function clear() {
   intervals.forEach(clearInterval); // stop all intervals
   intervals.length = 0; // clear array
   spnElement.innerText = 0;
-  score = 1;
+  score = 0;
 }
 
 btnElement.addEventListener("click", inc);
