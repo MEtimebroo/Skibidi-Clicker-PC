@@ -11,6 +11,7 @@ const buttons = [
     { name: 'Speakerman', scoreNeed: 80, scoreInc: 10},
     { name: 'Astro Toilet', scoreNeed: 200, scoreInc: 30},
     { name: 'Titan TV Man', scoreNeed: 500, scoreInc: 60},
+    { name: 'Titan Speakerman', scoreNeed: 1000, scoreInc: 120},
 ];
 // all created intervals
 const intervals = [];
