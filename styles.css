@@ -1,0 +1,69 @@
+body {
+    background-image: url("https://buzz.nayag.com/wp-content/uploads/2023/07/Skibidi-Toilet-Wiki.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #header {
+    background-image: url("https://buzz.nayag.com/wp-content/uploads/2023/07/Skibidi-Toilet-Wiki.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    margin: 0px;
+    border-width: 2px;
+    border-bottom-width: 2px;
+    border-bottom-color: whitesmoke;
+    border-bottom-style: solid;
+    width: 100.09%;
+  }
+  
+  #btns {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 135px;
+  }
+  
+  .btns {
+    background-color: darkslategray;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 5px;
+  }
+  
+  .btns:hover {
+    background-color: mediumpurple;
+  }
+
+  #btn1 {
+    margin-top: 20px;
+  }
+  
+  #upgradeButtons {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #upgradeButtons>.btns {
+    background-color: darkslategray;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 5px;
+    margin: 3px;
+    height: 3vh;
+    width: 20vh;
+    justify-content: center;
+  }
+  
+  #text {
+    text-align: center;
+  }
