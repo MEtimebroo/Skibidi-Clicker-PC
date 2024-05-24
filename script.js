@@ -27,7 +27,7 @@ buttons.forEach(button => {
       score -= button.scoreNeed;
       spnElement.innerText = score;
       let timerId = setInterval(() => {
-        score = score % 100000000000000000000000000000 + button.scoreInc;
+        score = score % 1000000 + button.scoreInc;
         spnElement.innerText = score;
       }, 1000);
       intervals.push(timerId);
