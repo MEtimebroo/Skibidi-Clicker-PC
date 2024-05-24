@@ -27,7 +27,7 @@ buttons.forEach(button => {
       score -= button.scoreNeed;
       spnElement.innerText = score;
       let timerId = setInterval(() => {
-        score = score % 100000000000000000 + button.scoreInc;
+        score = score % 100000000000000000000000000000 + button.scoreInc;
         spnElement.innerText = score;
       }, 1000);
       intervals.push(timerId);
@@ -37,14 +37,14 @@ buttons.forEach(button => {
 })
 
 function inc() {
-  spnElement.innerText = score += 1;
+  spnElement.innerText = score++;
 }
 
 function clear() {
   intervals.forEach(clearInterval); // stop all intervals
   intervals.length = 0; // clear array
   spnElement.innerText = 0;
-  score = 0;
+  score = 1;
 }
 
 btnElement.addEventListener("click", inc);
@@ -54,5 +54,10 @@ document.body.addEventListener("keyup", function(event) {
 });
 
 document.body.addEventListener("keydown", function(event) {
+  if (event.code === "Enter") clear();
+});
+document.body.addEventListener("keydown", function(event) {
+  if (event.code === "Enter") clear();
+});keydown", function(event) {
   if (event.code === "Enter") clear();
 });
