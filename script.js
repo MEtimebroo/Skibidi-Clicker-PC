@@ -18,7 +18,6 @@ buttons.forEach(button => {
   const addButton = document.createElement('button'); // create btn
   addButton.classList.add('btns'); // add class
   addButton.innerText = `${button.name} (${button.scoreNeed} clicks)`; // add text
-  document.body.appendChild(addButton);
   addButton.addEventListener('click', () => { // add listener
     if (score < button.scoreNeed) {
       console.log('poor');
